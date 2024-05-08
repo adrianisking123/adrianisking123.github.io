@@ -2,79 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>EduGames - Learn and Play</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link to CSS -->
+    <script src="script.js"></script> <!-- Link to JavaScript -->
 </head>
 <body>
     <header>
-        <h1>Welcome to EduGames!</h1>
-        <p>Where learning meets fun!</p>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="learning-content">
-        <h2>Learn Something New</h2>
-        <p>Did you know that the speed of light is approximately 299,792,458 meters per second? Here at EduGames, we make learning science, math, and other subjects fun!</p>
-    </section>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is the home section of the website.</p>
+            <button onclick="showAlert()">Click Me</button> <!-- JavaScript action -->
+        </section>
 
-    <section id="quiz-section">
-        <h2>Quick Quiz</h2>
-        <p>Test your knowledge with our quick quiz!</p>
-        <button id="start-quiz">Start Quiz</button>
-    </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>This is the about section of the website.</p>
+        </section>
 
-    <section id="quiz-content" style="display: none;">
-        <p>Question 1: What is the chemical symbol for gold?</p>
-        <button onclick="checkAnswer('Au')">Au</button>
-        <button onclick="checkAnswer('Ag')">Ag</button>
-        <button onclick="checkAnswer('Fe')">Fe</button>
-        <div id="quiz-result"></div>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>This is the contact section of the website.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    padding: 20px;
-}
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
+        
 
-section {
-    margin: 20px 0;
-}
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-#quiz-result {
-    margin-top: 10px;
-}
-document.getElementById("start-quiz").addEventListener("click", function() {
-    document.getElementById("quiz-section").style.display = "none";
-    document.getElementById("quiz-content").style.display = "block";
-});
-
-function checkAnswer(answer) {
-    const correctAnswer = "Au"; // Correct answer for gold
-
-    if (answer === correctAnswer) {
-        document.getElementById("quiz-result").innerText = "Correct!";
-    } else {
-        document.getElementById("quiz-result").innerText = "Incorrect. Try again!";
-    }
-}
+   
