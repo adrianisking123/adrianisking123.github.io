@@ -64,3 +64,17 @@ button:hover {
 #quiz-result {
     margin-top: 10px;
 }
+document.getElementById("start-quiz").addEventListener("click", function() {
+    document.getElementById("quiz-section").style.display = "none";
+    document.getElementById("quiz-content").style.display = "block";
+});
+
+function checkAnswer(answer) {
+    const correctAnswer = "Au"; // Correct answer for gold
+
+    if (answer === correctAnswer) {
+        document.getElementById("quiz-result").innerText = "Correct!";
+    } else {
+        document.getElementById("quiz-result").innerText = "Incorrect. Try again!";
+    }
+}
