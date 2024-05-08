@@ -33,6 +33,7 @@
         <section id="contact">
             <h2>Contact</h2>
             <p>This is the contact section of the website.</p>
+       0798949915
         </section>
     </main>
 
